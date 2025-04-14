@@ -52,6 +52,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+        morocco: {
+          terracotta: '#CB6D51',
+          ocre: '#D9A566',
+          blue: '#3677A2', 
+          majorelle: '#3936A6',
+          sand: '#E6D7B8',
+          clay: '#9B6E50',
+          mint: '#98C4B3',
+          dark: '#333333',
+        },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
