@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X, ShoppingCart, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -12,30 +13,30 @@ const Navbar = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="flex items-center">
+            <Link to="/" className="flex items-center">
               <span className="text-2xl font-bold bg-gradient-to-r from-morocco-terracotta to-morocco-blue bg-clip-text text-transparent">
                 MadeByMe
               </span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            <a href="/" className="font-medium hover:text-morocco-blue transition-colors">
+            <Link to="/" className="font-medium hover:text-morocco-blue transition-colors">
               Accueil
-            </a>
-            <a href="/products" className="font-medium hover:text-morocco-blue transition-colors">
+            </Link>
+            <Link to="/products" className="font-medium hover:text-morocco-blue transition-colors">
               Produits
-            </a>
-            <a href="/editor" className="font-medium hover:text-morocco-blue transition-colors">
+            </Link>
+            <Link to="/editor" className="font-medium hover:text-morocco-blue transition-colors">
               Créer
-            </a>
-            <a href="/how-it-works" className="font-medium hover:text-morocco-blue transition-colors">
-              Comment ça marche
-            </a>
-            <a href="/about" className="font-medium hover:text-morocco-blue transition-colors">
+            </Link>
+            <Link to="/faq" className="font-medium hover:text-morocco-blue transition-colors">
+              FAQ
+            </Link>
+            <Link to="/about" className="font-medium hover:text-morocco-blue transition-colors">
               À propos
-            </a>
+            </Link>
           </nav>
 
           {/* Desktop Right Navigation */}
@@ -67,21 +68,21 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden p-4 bg-white border-t">
           <nav className="flex flex-col gap-4">
-            <a href="/" className="font-medium hover:text-morocco-blue transition-colors">
+            <Link to="/" className="font-medium hover:text-morocco-blue transition-colors">
               Accueil
-            </a>
-            <a href="/products" className="font-medium hover:text-morocco-blue transition-colors">
+            </Link>
+            <Link to="/products" className="font-medium hover:text-morocco-blue transition-colors">
               Produits
-            </a>
-            <a href="/editor" className="font-medium hover:text-morocco-blue transition-colors">
+            </Link>
+            <Link to="/editor" className="font-medium hover:text-morocco-blue transition-colors">
               Créer
-            </a>
-            <a href="/how-it-works" className="font-medium hover:text-morocco-blue transition-colors">
-              Comment ça marche
-            </a>
-            <a href="/about" className="font-medium hover:text-morocco-blue transition-colors">
+            </Link>
+            <Link to="/faq" className="font-medium hover:text-morocco-blue transition-colors">
+              FAQ
+            </Link>
+            <Link to="/about" className="font-medium hover:text-morocco-blue transition-colors">
               À propos
-            </a>
+            </Link>
             <div className="flex items-center gap-4 mt-4">
               <Button variant="outline" className="font-medium flex-1">
                 Se connecter
